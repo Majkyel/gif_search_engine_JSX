@@ -1,0 +1,16 @@
+{
+  "name": "gifs_search_application",
+  "version": "1.0.0",
+  "description": "I created application with counters group in REACT.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
+}
