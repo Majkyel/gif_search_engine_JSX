@@ -11,12 +11,8 @@ Search = React.createClass({
         this.setState({
             searchingText: searchingText
         });
-        
-        if (searchingText.length > 2) {
-            this.props.onSearch(searchingText);
-        } else {
-            return;
-        }
+             
+        return searchingText.length > 2 ? this.props.onSearch(searchingText) : null;   
     },
     
     handleKeyUp: function(event) {
@@ -42,12 +38,12 @@ Search = React.createClass({
         };
         
         return <input 
-                type='text'
-                onChange={this.handleChange}
-                onKeyUp={this.handleKeyUp}
-                placeholder='Tutaj wpisz wyszukiwaną frazę'
-                style={styles}
-                value={this.state.searchTerm}
+                    type='text'
+                    onChange={this.handleChange}
+                    onKeyUp={this.handleKeyUp}
+                    placeholder='Tutaj wpisz wyszukiwaną frazę'
+                    style={styles}
+                    value={this.state.searchTerm}
                 />
     }
 });

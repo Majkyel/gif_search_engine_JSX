@@ -7,7 +7,14 @@ var styles = {
     boxShadow: 'inset 0 0 10px black',
     backgroundColor: 'white',
     borderRadius: '5px',
-    margin: '0.5em auto',
+    margin: '0.5em auto'
+};
+
+var imgStyles = {
+    width: '100%',
+    maxWidth: '380px',
+    maxHeight: '450px',
+    margin: '70px auto'
 };
 
 Gif = React.createClass({
@@ -22,7 +29,7 @@ Gif = React.createClass({
         return (
             <div style={styles}>
                 <a href={this.getUrl()} title='view this on giphy' target='new'>
-                    <img id='gif' src={url} style={{width: '100%', maxWidth: '380px', maxHeight: '450px', margin: '70px auto'}}/>
+                    <img id='gif' src={url} style={imgStyles}/>
                 </a>
             </div>
         );
